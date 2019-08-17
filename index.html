@@ -86,52 +86,54 @@
 				<div id="main">
 					<div id="leftcol">
 						<div class="content">
-						<ul>
-						  <li class="Add1">Овощи</li>
-						  <li class="Add2">Фрукты</li>
-						  <li class="Add3">Химия</li>
-						  <li class="Add4">Мясо</li>
-						  <li class="Add5">Молочка</li>
+						<ul id="AddUl">
+						  <li class=".Add1"><a href="#" id="add1">Овощи</a></li>
+						  <li class=".Add2"><a href="#" id="add2">Фрукты</a></li>
+						  <li class=".Add3"><a href="#" id="add3">Химия</a></li>
+						  <li class=".Add4"><a href="#" id="add4">Мясо</a></li>
+						  <li class=".Add5"><a href="#" id="add5">Молочка</a></li>
 						</ul>
 						</div>
 					</div>
 					<div id="centercol">
 						<div class="content">
+							<div id="contentProduct">
 							<div class="showText1 notActive">
 								<ul>
-									<li class="showProduct1">Помидоры</li>
-									<li class="showProduct2">Огурцы</li>
-									<li class="showProduct3">Баклажаны</li>
+									<li class="showProduct1"><a href="#" id="catagory1">Помидоры</a></li>
+									<li class="showProduct2"><a href="#" id="catagory2">Огурцы</a></li>
+									<li class="showProduct3"><a href="#" id="catagory3">Баклажаны</a></li>
 								</ul>
 							</div>
 							<div class="showText2 notActive">
 								<ul>
-									<li class="showProduct4">Бананы</li>
-									<li class="showProduct5">Сливы</li>
-									<li class="showProduct6">Арбуз</li>
+									<li class="showProduct4"><a href="#" id="catagory4">Бананы</a></li>
+									<li class="showProduct5"><a href="#" id="catagory5">Сливы</a></li>
+									<li class="showProduct6"><a href="#" id="catagory6">Арбуз</a></li>
 								</ul>
 							</div>
 							<div class="showText3 notActive">
 								<ul>
-									<li class="showProduct7">Стиральный порошок</li>
-									<li class="showProduct8">Моющее средство для посуды</li>
-									<li class="showProduct9">Освежитель воздуха</li>
+									<li class="showProduct7"><a href="#" id="catagory7">Стиральный порошок</a></li>
+									<li class="showProduct8"><a href="#" id="catagory8">Моющее средство для посуды</a></li>
+									<li class="showProduct9"><a href="#" id="catagory9">Освежитель воздуха</a></li>
 								</ul>
 							</div>
 							<div class="showText4 notActive">
 								<ul>
-									<li class="showProduct10">Баранина</li>
-									<li class="showProduct11">Свинина</li>
-									<li class="showProduct12">Курятина</li>
+									<li class="showProduct10"><a href="#" id="catagory10">Баранина</a></li>
+									<li class="showProduct11"><a href="#" id="catagory11">Свинина</a></li>
+									<li class="showProduct12"><a href="#" id="catagory12">Курятина</a></li>
 								</ul>
 							</div>
 							<div class="showText5 notActive">
 								<ul>
-									<li class="showProduct13">Молоко</li>
-									<li class="showProduct14">Йогурт</li>
-									<li class="showProduct15">Кефир</li>
+									<li class="showProduct13"><a href="#" id="catagory13">Молоко</a></li>
+									<li class="showProduct14"><a href="#" id="catagory14">Йогурт</a></li>
+									<li class="showProduct15"><a href="#" id="catagory15">Кефир</a></li>
 								</ul>
 							</div>
+						</div>
 						</div>
 					</div>
 				</div>
@@ -141,22 +143,22 @@
 				<div class="content">
 					<div class="forma notActive">
 					<p><b>Ваше ФИО:</b><br>
-   					<input type="text" size="60"><br><br>
+   					<input type="text" size="60" id="fio"><br><br>
    					<b>Ваш город:</b><br>
    					<select>
 					  <option>Одесса</option>
 					  <option>Киев</option>
 					</select><br><br>
-					<b>Новой почты</b><br>
-					<input type="text" size="60"><br><br>
+					<b>Адрес отделения Новой почты</b><br>
+					<input type="text" size="60" id="nova_poshta"><br><br>
 					<b>Оплата</b><br>
 					<input type="radio" name="option1" value="a1" checked>Наложенный платеж<br>
 					<input type="radio" name="option1" value="a1">Оплата банковской картой<br><br>
 					<b>Количество товара:</b><br>
-					<input type="text" size="10"><br><br>
+					<input type="text" size="10" id="tovar"><br><br>
 					<b>Комментарий к заказу:</b><br>
-					<textarea rows="10" cols="45"></textarea><br><br>
-					<button>Купить</button>
+					<textarea rows="10" cols="45" id="comment"></textarea><br><br>
+					<button class="sendOrder">Купить</button>
 				</p>
 				</div>
 				</div>
